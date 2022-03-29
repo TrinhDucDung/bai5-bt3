@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tienVay, namVay, laiXuat;
+        tienVay = parseInt(prompt('Nhập số tiền bạn muốn vay, đơn vị triệu đồng'));
+        namVay = parseInt(prompt('Nhập số tháng bạn muốn vay, đơn vị năm'));
+        laiXuat = parseFloat(prompt('Nhập số lãi suất hằng năm, đơn vị %'));
+        //kết quả
+        tienTra = tienVay + (tienVay * (laiXuat / 100) * namVay);
+        //hiển thị
+        document.write("Số tiền cần vay: " + tienVay + " triệu đồng" + "<br/>");
+        document.write("Số năm cần vay: " + namVay + " năm" + "<br/>");
+        document.write("Lãi xuất áp dụng: " + laiXuat + " %" + "<br/>");
+        document.write("Số tiền cần trả sau " + namVay + " năm là: " + tienTra + " triệu đồng");
+    </script>
+</body>
+
+</html>
